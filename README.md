@@ -1,4 +1,4 @@
-# CLASSIFICATION OF APPLE APPS' RATINGS
+# CLASSIFICATION OF iOS APPS' RATINGS
 Springboard capstone one project on Apple app
 
 ## 1.0 Problem Summary
