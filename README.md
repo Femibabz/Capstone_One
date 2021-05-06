@@ -39,7 +39,7 @@ The values of the prime_genre column were converted to dummy variables. This fur
 Also, due to the magnitude of values of 'size_bytes', 'rating_count_tot', 'rating_count_ver', and 'sup_devices.num', the values of these features were standardized, and the new values were added to the data frame.
 For the modeling purpose, the data frame was split into training and testing data set in the ratio of 75% to 25% respectively.
 
-##2.2 Modeling:
+## 2.2 Modeling:
 This is a classification problem, in supervised learning. Here we have used the following classification models:
 •	Logistic Regression
 •	K-Nearest Neighbor (KNN)
@@ -49,7 +49,7 @@ This is a classification problem, in supervised learning. Here we have used the 
 •	Gradient Boost
 Evaluating the performance of a model by training and testing on the same dataset can lead to overfitting. Hence the model evaluation is based on splitting the dataset into train and validation set as done above. But the performance of the prediction result depends upon the random choice of the pair. To overcome that, the Cross-Validation procedure is used where under the k-fold CV approach, the training set is split into k smaller sets, where a model is trained using k-1 of the folds as training data and the model is validated on the remaining part.
 
-##Classification/ Confusion Matrix:
+## Classification/ Confusion Matrix:
 This matrix summarizes the correct and incorrect classifications that a classifier produced for a certain dataset. Rows and columns of the classification matrix correspond to the true and predicted classes respectively. The two diagonal cells (upper left & lower right (TP & TN respectively)) give the number of correct classifications, where the predicted class coincides with the actual class of the observation. The off-diagonal cells give the count of the misclassification (upper right & lower left (FP & FN respectively)). The classification matrix gives estimates of the true classification and misclassification rates.
 
 Logistic Regression's Confusion Matrix
@@ -98,7 +98,7 @@ The hyperparameter tuning of the Gradient Boost algorithm reduced its accuracy s
 
 A comparison of the two ROC-AUC scores of the two algorithms shows that Random Forest performs better than Gradient Boost in the classification of the test data set.
 
-##3.0 Important Features from Model:
+## 3.0 Important Features from Model:
 The features that impacted the performance of the model most were those engineered from the original features in the dataset. The top features were interpreted from Chinese and Japanese languages to English to be able to make more sense of their relevance and for analysis purpose. The most important feature of the database from the Random Forest model (which was the best performing model) is volume control. As a result, for most application, the ability of users to be able to control volume of the sound output seamlessly can play a good role in improving ratings amongst users. It should also be noted that some applications do not need sound output and this feature might not really affect the likeability of such apps. 
 
 ![Important Features](https://user-images.githubusercontent.com/61480297/117249284-2e94dd00-adf6-11eb-8e1b-41f288533ab5.png)
@@ -109,10 +109,10 @@ Features related to billing and subscription were also important to this classif
 App genres that developers can look into based on the important features of the model relate to commuting, hospitality (hotel), gaming, messaging and sport streaming.
 Description also came out as an important feature. Hence, it can be seen that good description of functionalities of apps will go a long way to improve the ratings of apps.
 
-##3.0 Ideas for Future Research:
+## 3.0 Ideas for Future Research:
 •	An idea for further research on this topic is to investigate the impact of prices and prime genres on application retention among similar applications. 
 
-##4.0 Recommendations
+## 4.0 Recommendations
 1.	Based on the best performing model in the data set, investors can compare apps and predict the possibility of their apps gaining traction in the market and giving a good return on investment in the long run.
 2.	Apps platforms can use the model to rank and suggest high performing apps to users. Time spent by consumers trying to reduce similar applications will be reduced through this rating ranking system.
 3.	For apps’ owners and apps platforms (app store), revenue generation can be properly structured to mirror the performance of the apps based on customer ratings.
