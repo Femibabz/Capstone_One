@@ -1,5 +1,8 @@
 # CLASSIFICATION OF iOS APPS' RATINGS
 
+![App Rating](https://user-images.githubusercontent.com/61480297/117250809-9fd58f80-adf8-11eb-86e4-f3d0edbb948d.png)
+
+
 ## 1.0 Problem Summary
 With millions of apps with similar functionalities around nowadays, mobile app analytics is a great way to understand the existing strategy to drive growth and retention of future users. Developers and investors can rely on users’ ratings to predict whether the overall rating for an app is more than 4 stars (which is assumed to be a good app) or not. The performance of an app based on user rating should inform decision-making on version update and functionality upgrade amongst other things. Hence, the goal of this project is to predict whether the overall rating for an app is more than 4 stars or not. This project set out to classify best performing iOS applications based on users’ ratings. On a general note, ratings serve as protection for both app users and investors to guard against time and financial investments in products/services that do not perform well in the market. Hence, the goal of this project is to predict whether the overall rating for an app is more than 4 stars (1=yes, 0=no). For this project, an app with 4 or more stars is assumed to be a very good app.
 ## 2.0 Approach Taken
